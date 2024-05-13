@@ -1,14 +1,18 @@
+// src/components/Transaction.js
+
 import React from "react";
 
-function Transaction() {
+const Transaction = ({ transaction }) => {
+  const { date, description, category, amount } = transaction;
+
   return (
     <tr>
-      <td>{"your code here..."}</td>
-      <td>{"your code here..."}</td>
-      <td>{"your code here..."}</td>
-      <td>{"your code here..."}</td>
+      <td>{date}</td>
+      <td>{description}</td>
+      <td>{category}</td>
+      <td>{amount}</td>
     </tr>
   );
-}
+};
 
 export default Transaction;
